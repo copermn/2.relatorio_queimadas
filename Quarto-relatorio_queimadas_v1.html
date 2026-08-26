@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Fábio Passos">
+<meta name="dcterms.date" content="2026-01-26">
+
+<title>Relatório Experimental Informativo de Queimadas na Amazônia Legal</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="Quarto-relatorio_queimadas_v1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Quarto-relatorio_queimadas_v1_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Quarto-relatorio_queimadas_v1_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Quarto-relatorio_queimadas_v1_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="Quarto-relatorio_queimadas_v1_files/libs/quarto-html/popper.min.js"></script>
+<script src="Quarto-relatorio_queimadas_v1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Quarto-relatorio_queimadas_v1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Quarto-relatorio_queimadas_v1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Quarto-relatorio_queimadas_v1_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Quarto-relatorio_queimadas_v1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Quarto-relatorio_queimadas_v1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Quarto-relatorio_queimadas_v1_files/libs/bootstrap/bootstrap-4d7f0bce1131f3e5f9547cd857cfbfc8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #A00000;
+      }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="quarto-light">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Relatório Experimental Informativo de Queimadas na Amazônia Legal</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Fábio Passos </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 26, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">1</span> 1. Introdução</a></li>
+  <li><a href="#resultado-da-análise---gráficos-separados" id="toc-resultado-da-análise---gráficos-separados" class="nav-link" data-scroll-target="#resultado-da-análise---gráficos-separados"><span class="header-section-number">2</span> Resultado da Análise - Gráficos Separados</a></li>
+  <li><a href="#resultado-da-análise---gráfico-unificado" id="toc-resultado-da-análise---gráfico-unificado" class="nav-link" data-scroll-target="#resultado-da-análise---gráfico-unificado"><span class="header-section-number">3</span> Resultado da Análise - Gráfico Unificado</a></li>
+  <li><a href="#resultado-da-análise---tabela-municipios-3" id="toc-resultado-da-análise---tabela-municipios-3" class="nav-link" data-scroll-target="#resultado-da-análise---tabela-municipios-3"><span class="header-section-number">4</span> Resultado da Análise - Tabela Municipios 3+</a></li>
+  <li><a href="#resultado-da-análise---tabela-municipios-3-1" id="toc-resultado-da-análise---tabela-municipios-3-1" class="nav-link" data-scroll-target="#resultado-da-análise---tabela-municipios-3-1"><span class="header-section-number">5</span> Resultado da Análise - Tabela Municipios 3+</a></li>
+  <li><a href="#resultado-da-análise---lista-de-área-queimada-dos-municipios" id="toc-resultado-da-análise---lista-de-área-queimada-dos-municipios" class="nav-link" data-scroll-target="#resultado-da-análise---lista-de-área-queimada-dos-municipios"><span class="header-section-number">6</span> Resultado da Análise - Lista de Área Queimada dos Municipios (%)</a></li>
+  <li><a href="#resultado-da-análise---tabela-de-área-queimada-dos-municipios" id="toc-resultado-da-análise---tabela-de-área-queimada-dos-municipios" class="nav-link" data-scroll-target="#resultado-da-análise---tabela-de-área-queimada-dos-municipios"><span class="header-section-number">7</span> Resultado da Análise - Tabela de Área Queimada dos Municipios (%)</a></li>
+  <li><a href="#resultado-da-análise---mapa-de-integração-fogo-x-dias-s-chuva" id="toc-resultado-da-análise---mapa-de-integração-fogo-x-dias-s-chuva" class="nav-link" data-scroll-target="#resultado-da-análise---mapa-de-integração-fogo-x-dias-s-chuva"><span class="header-section-number">8</span> Resultado da Análise - Mapa de Integração Fogo x Dias s/ Chuva</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Quarto-relatorio_queimadas_v1.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div><div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="relatorio_queimadas_v2_localidade-preview.html"><i class="bi bi-journal-code"></i>Delimitação por Localidade</a></li></ul></div></nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="introdução" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="introdução"><span class="header-section-number">1</span> 1. Introdução</h2>
+<p>Este relatório apresenta dados extraídos de queimadas diretamente do banco de dados PostgreSQL usado no Boletim Informativo da Amazônia para as primeiras semanas dos meses de julho e agosto de 2026.</p>
+</section>
+<section id="resultado-da-análise---gráficos-separados" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="resultado-da-análise---gráficos-separados"><span class="header-section-number">2</span> Resultado da Análise - Gráficos Separados</h2>
+<p>Abaixo, os gráficos separado dos estados da Amazônia Legal com o número de ocorrência de fogo nos meses de julho e agosto de 2026.</p>
+<div class="quarto-embed-nb-cell">
+<div id="grafico-uf_separados" class="cell" data-execution_count="27">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Quarto-relatorio_queimadas_v1_files/figure-html/relatorio_queimadas_v2_localidade-grafico-uf_separados-output-1.png" id="grafico-uf_separados-1" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Quarto-relatorio_queimadas_v1_files/figure-html/relatorio_queimadas_v2_localidade-grafico-uf_separados-output-2.png" id="grafico-uf_separados-2" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<a class="quarto-notebook-link" id="nblink-1" href="relatorio_queimadas_v2_localidade-preview.html#cell-grafico-UF_separados">Source: Delimitação por Localidade</a></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="resultado-da-análise---gráfico-unificado" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="resultado-da-análise---gráfico-unificado"><span class="header-section-number">3</span> Resultado da Análise - Gráfico Unificado</h2>
+<p>Abaixo, o gráfico unificado dos estados da Amazônia Legal com o número de ocorrência de fogo nos meses de julho e agosto de 2026.</p>
+<div class="quarto-embed-nb-cell">
+<div id="cell-grafico-UF_unificado" class="cell" data-execution_count="25">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Quarto-relatorio_queimadas_v1_files/figure-html/relatorio_queimadas_v2_localidade-grafico-uf_unificado-output-1.png" id="grafico-uf_unificado" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+<hr style="border: none; border-top: 3px solid black; width: 100%;">
+</section>
+<section id="resultado-da-análise---tabela-municipios-3" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="resultado-da-análise---tabela-municipios-3"><span class="header-section-number">4</span> Resultado da Análise - Tabela Municipios 3+</h2>
+<p>Abaixo, a tabela com os 3 municipios com os maiores números de ocorrência de fogo em julho e agosto de 2026 na Amazônia Legal</p>
+<div class="quarto-embed-nb-cell">
+<div id="tabela-municipios" class="cell" data-execution_count="75">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+--- RANKING: Julho 2026 ---</code></pre>
+</div>
+<div id="tabela-municipios-1" class="cell-output cell-output-display">
+<style type="text/css">
+#T_20458 th.col_heading {
+  text-align: center !important;
+}
+#T_20458 thead {
+  background-color: #A00000;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+#T_20458 td {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+#T_20458_row0_col0, #T_20458_row0_col1, #T_20458_row0_col2, #T_20458_row0_col3, #T_20458_row0_col4, #T_20458_row0_col5, #T_20458_row2_col0, #T_20458_row2_col1, #T_20458_row2_col2, #T_20458_row2_col3, #T_20458_row2_col4, #T_20458_row2_col5 {
+  background-color: white;
+}
+#T_20458_row1_col0, #T_20458_row1_col1, #T_20458_row1_col2, #T_20458_row1_col3, #T_20458_row1_col4, #T_20458_row1_col5 {
+  background-color: #FED9D5;
+}
+</style>
+
+<table id="T_20458" class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th id="T_20458_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">POSIÇÃO</th>
+<th id="T_20458_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">MUNICÍPIO</th>
+<th id="T_20458_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">UF</th>
+<th id="T_20458_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">N° DE EVENTOS</th>
+<th id="T_20458_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">ÁREA DE EVENTOS (KM²)</th>
+<th id="T_20458_level0_col5" class="col_heading level0 col5" data-quarto-table-cell-role="th">ÁREA DE EVENTOS NO MUNICÍPIO (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_20458_row0_col0" class="data row0 col0">1°</td>
+<td id="T_20458_row0_col1" class="data row0 col1">Mateiros</td>
+<td id="T_20458_row0_col2" class="data row0 col2">TO</td>
+<td id="T_20458_row0_col3" class="data row0 col3">20</td>
+<td id="T_20458_row0_col4" class="data row0 col4">78,50</td>
+<td id="T_20458_row0_col5" class="data row0 col5">0,81</td>
+</tr>
+<tr class="even">
+<td id="T_20458_row1_col0" class="data row1 col0">2°</td>
+<td id="T_20458_row1_col1" class="data row1 col1">Campinápolis</td>
+<td id="T_20458_row1_col2" class="data row1 col2">MT</td>
+<td id="T_20458_row1_col3" class="data row1 col3">19</td>
+<td id="T_20458_row1_col4" class="data row1 col4">42,31</td>
+<td id="T_20458_row1_col5" class="data row1 col5">0,71</td>
+</tr>
+<tr class="odd">
+<td id="T_20458_row2_col0" class="data row2 col0">3°</td>
+<td id="T_20458_row2_col1" class="data row2 col1">Lagoa da Confusão</td>
+<td id="T_20458_row2_col2" class="data row2 col2">TO</td>
+<td id="T_20458_row2_col3" class="data row2 col3">17</td>
+<td id="T_20458_row2_col4" class="data row2 col4">66,91</td>
+<td id="T_20458_row2_col5" class="data row2 col5">0,63</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+--- RANKING: Agosto 2026 ---</code></pre>
+</div>
+<div id="tabela-municipios-2" class="cell-output cell-output-display">
+<style type="text/css">
+#T_29c5e th.col_heading {
+  text-align: center !important;
+}
+#T_29c5e thead {
+  background-color: #A00000;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+#T_29c5e td {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+#T_29c5e_row0_col0, #T_29c5e_row0_col1, #T_29c5e_row0_col2, #T_29c5e_row0_col3, #T_29c5e_row0_col4, #T_29c5e_row0_col5, #T_29c5e_row2_col0, #T_29c5e_row2_col1, #T_29c5e_row2_col2, #T_29c5e_row2_col3, #T_29c5e_row2_col4, #T_29c5e_row2_col5 {
+  background-color: white;
+}
+#T_29c5e_row1_col0, #T_29c5e_row1_col1, #T_29c5e_row1_col2, #T_29c5e_row1_col3, #T_29c5e_row1_col4, #T_29c5e_row1_col5 {
+  background-color: #FED9D5;
+}
+</style>
+
+<table id="T_29c5e" class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th id="T_29c5e_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">POSIÇÃO</th>
+<th id="T_29c5e_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">MUNICÍPIO</th>
+<th id="T_29c5e_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">UF</th>
+<th id="T_29c5e_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">N° DE EVENTOS</th>
+<th id="T_29c5e_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">ÁREA DE EVENTOS (KM²)</th>
+<th id="T_29c5e_level0_col5" class="col_heading level0 col5" data-quarto-table-cell-role="th">ÁREA DE EVENTOS NO MUNICÍPIO (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_29c5e_row0_col0" class="data row0 col0">1°</td>
+<td id="T_29c5e_row0_col1" class="data row0 col1">Lagoa da Confusão</td>
+<td id="T_29c5e_row0_col2" class="data row0 col2">TO</td>
+<td id="T_29c5e_row0_col3" class="data row0 col3">36</td>
+<td id="T_29c5e_row0_col4" class="data row0 col4">246,89</td>
+<td id="T_29c5e_row0_col5" class="data row0 col5">2,33</td>
+</tr>
+<tr class="even">
+<td id="T_29c5e_row1_col0" class="data row1 col0">2°</td>
+<td id="T_29c5e_row1_col1" class="data row1 col1">Fernando Falcão</td>
+<td id="T_29c5e_row1_col2" class="data row1 col2">MA</td>
+<td id="T_29c5e_row1_col3" class="data row1 col3">29</td>
+<td id="T_29c5e_row1_col4" class="data row1 col4">107,56</td>
+<td id="T_29c5e_row1_col5" class="data row1 col5">2,09</td>
+</tr>
+<tr class="odd">
+<td id="T_29c5e_row2_col0" class="data row2 col0">3°</td>
+<td id="T_29c5e_row2_col1" class="data row2 col1">São Félix do Xingu</td>
+<td id="T_29c5e_row2_col2" class="data row2 col2">PA</td>
+<td id="T_29c5e_row2_col3" class="data row2 col3">22</td>
+<td id="T_29c5e_row2_col4" class="data row2 col4">47,60</td>
+<td id="T_29c5e_row2_col5" class="data row2 col5">0,06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+<hr style="border: none; border-top: 3px solid black; width: 100%;">
+</section>
+<section id="resultado-da-análise---tabela-municipios-3-1" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="resultado-da-análise---tabela-municipios-3-1"><span class="header-section-number">5</span> Resultado da Análise - Tabela Municipios 3+</h2>
+<p>Abaixo, a tabela com os 3 municipios com os maiores números de ocorrência de fogo em julho e agosto de 2026 na Amazônia Legal</p>
+<div class="quarto-embed-nb-cell">
+<div id="cell-Tabela_unificado_UF" class="cell" data-execution_count="78">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+--- RANKING UNIFICADO ---</code></pre>
+</div>
+<div id="tabela_unificado_uf" class="cell-output cell-output-display">
+<style type="text/css">
+#T_07a99 th.col_heading {
+  text-align: center !important;
+}
+#T_07a99 thead {
+  background-color: #A00000;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+#T_07a99 td {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+#T_07a99_row0_col0, #T_07a99_row0_col1, #T_07a99_row0_col2, #T_07a99_row0_col3, #T_07a99_row0_col4, #T_07a99_row0_col5, #T_07a99_row0_col6, #T_07a99_row4_col0, #T_07a99_row4_col1, #T_07a99_row4_col2, #T_07a99_row4_col3, #T_07a99_row4_col4, #T_07a99_row4_col5, #T_07a99_row4_col6 {
+  background-color: #FED9D5;
+}
+#T_07a99_row1_col0, #T_07a99_row1_col1, #T_07a99_row1_col2, #T_07a99_row1_col3, #T_07a99_row1_col4, #T_07a99_row1_col5, #T_07a99_row1_col6, #T_07a99_row3_col0, #T_07a99_row3_col1, #T_07a99_row3_col2, #T_07a99_row3_col3, #T_07a99_row3_col4, #T_07a99_row3_col5, #T_07a99_row3_col6 {
+  background-color: #FFF5F4;
+}
+#T_07a99_row2_col0, #T_07a99_row2_col1, #T_07a99_row2_col2, #T_07a99_row2_col3, #T_07a99_row2_col4, #T_07a99_row2_col5, #T_07a99_row2_col6 {
+  background-color: #FED9D5;
+  border-bottom: 3px solid #A00000;
+}
+#T_07a99_row5_col0, #T_07a99_row5_col1, #T_07a99_row5_col2, #T_07a99_row5_col3, #T_07a99_row5_col4, #T_07a99_row5_col5, #T_07a99_row5_col6 {
+  background-color: #FFF5F4;
+  border-bottom: 3px solid #A00000;
+}
+</style>
+
+<table id="T_07a99" class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th id="T_07a99_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">PERÍODO</th>
+<th id="T_07a99_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">POSIÇÃO</th>
+<th id="T_07a99_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">MUNICÍPIO</th>
+<th id="T_07a99_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">UF</th>
+<th id="T_07a99_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">N° DE EVENTOS</th>
+<th id="T_07a99_level0_col5" class="col_heading level0 col5" data-quarto-table-cell-role="th">ÁREA DE EVENTOS (KM²)</th>
+<th id="T_07a99_level0_col6" class="col_heading level0 col6" data-quarto-table-cell-role="th">ÁREA DE EVENTOS NO MUNICÍPIO (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_07a99_row0_col0" class="data row0 col0">Julho 2026</td>
+<td id="T_07a99_row0_col1" class="data row0 col1">1°</td>
+<td id="T_07a99_row0_col2" class="data row0 col2">Mateiros</td>
+<td id="T_07a99_row0_col3" class="data row0 col3">TO</td>
+<td id="T_07a99_row0_col4" class="data row0 col4">20</td>
+<td id="T_07a99_row0_col5" class="data row0 col5">78,50</td>
+<td id="T_07a99_row0_col6" class="data row0 col6">0,81</td>
+</tr>
+<tr class="even">
+<td id="T_07a99_row1_col0" class="data row1 col0">Julho 2026</td>
+<td id="T_07a99_row1_col1" class="data row1 col1">2°</td>
+<td id="T_07a99_row1_col2" class="data row1 col2">Campinápolis</td>
+<td id="T_07a99_row1_col3" class="data row1 col3">MT</td>
+<td id="T_07a99_row1_col4" class="data row1 col4">19</td>
+<td id="T_07a99_row1_col5" class="data row1 col5">42,31</td>
+<td id="T_07a99_row1_col6" class="data row1 col6">0,71</td>
+</tr>
+<tr class="odd">
+<td id="T_07a99_row2_col0" class="data row2 col0">Julho 2026</td>
+<td id="T_07a99_row2_col1" class="data row2 col1">3°</td>
+<td id="T_07a99_row2_col2" class="data row2 col2">Lagoa da Confusão</td>
+<td id="T_07a99_row2_col3" class="data row2 col3">TO</td>
+<td id="T_07a99_row2_col4" class="data row2 col4">17</td>
+<td id="T_07a99_row2_col5" class="data row2 col5">66,91</td>
+<td id="T_07a99_row2_col6" class="data row2 col6">0,63</td>
+</tr>
+<tr class="even">
+<td id="T_07a99_row3_col0" class="data row3 col0">Agosto 2026</td>
+<td id="T_07a99_row3_col1" class="data row3 col1">1°</td>
+<td id="T_07a99_row3_col2" class="data row3 col2">Lagoa da Confusão</td>
+<td id="T_07a99_row3_col3" class="data row3 col3">TO</td>
+<td id="T_07a99_row3_col4" class="data row3 col4">36</td>
+<td id="T_07a99_row3_col5" class="data row3 col5">246,89</td>
+<td id="T_07a99_row3_col6" class="data row3 col6">2,33</td>
+</tr>
+<tr class="odd">
+<td id="T_07a99_row4_col0" class="data row4 col0">Agosto 2026</td>
+<td id="T_07a99_row4_col1" class="data row4 col1">2°</td>
+<td id="T_07a99_row4_col2" class="data row4 col2">Fernando Falcão</td>
+<td id="T_07a99_row4_col3" class="data row4 col3">MA</td>
+<td id="T_07a99_row4_col4" class="data row4 col4">29</td>
+<td id="T_07a99_row4_col5" class="data row4 col5">107,56</td>
+<td id="T_07a99_row4_col6" class="data row4 col6">2,09</td>
+</tr>
+<tr class="even">
+<td id="T_07a99_row5_col0" class="data row5 col0">Agosto 2026</td>
+<td id="T_07a99_row5_col1" class="data row5 col1">3°</td>
+<td id="T_07a99_row5_col2" class="data row5 col2">São Félix do Xingu</td>
+<td id="T_07a99_row5_col3" class="data row5 col3">PA</td>
+<td id="T_07a99_row5_col4" class="data row5 col4">22</td>
+<td id="T_07a99_row5_col5" class="data row5 col5">47,60</td>
+<td id="T_07a99_row5_col6" class="data row5 col6">0,06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+<hr style="border: none; border-top: 3px solid black; width: 100%;">
+</section>
+<section id="resultado-da-análise---lista-de-área-queimada-dos-municipios" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="resultado-da-análise---lista-de-área-queimada-dos-municipios"><span class="header-section-number">6</span> Resultado da Análise - Lista de Área Queimada dos Municipios (%)</h2>
+<p>Listagem dos municipios com as maiores áreas de influência de eventos de fogo em relação ao tamanho do município em julho e agosto de 2026</p>
+<div class="quarto-embed-nb-cell">
+<div id="munic_queimados-lista" class="cell" data-execution_count="41">
+<div class="cell-output cell-output-stdout">
+<pre><code>    PERÍODO POSIÇÃO           MUNICÍPIO UF TOTAL QUEIMADO (%)
+Agosto 2026      1°   Nova Santa Helena MT               4,64
+Agosto 2026      2°   Lagoa da Confusão TO               2,33
+Agosto 2026      3°     Fernando Falcão MA               2,09
+Agosto 2026      4° Formoso do Araguaia TO               1,54
+Agosto 2026      5°         Nova Nazaré MT               1,35
+ Julho 2026      1°   Nova Santa Helena MT               4,64
+ Julho 2026      2°   Lagoa da Confusão TO               2,33
+ Julho 2026      3°     Fernando Falcão MA               2,09
+ Julho 2026      4° Formoso do Araguaia TO               1,54
+ Julho 2026      5°         Nova Nazaré MT               1,35</code></pre>
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+<hr style="border: none; border-top: 3px solid black; width: 100%;">
+</section>
+<section id="resultado-da-análise---tabela-de-área-queimada-dos-municipios" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="resultado-da-análise---tabela-de-área-queimada-dos-municipios"><span class="header-section-number">7</span> Resultado da Análise - Tabela de Área Queimada dos Municipios (%)</h2>
+<p>Tabela dos municipios com as maiores áreas de influência de eventos de fogo em relação ao tamanho do município em julho e agosto de 2026</p>
+<div class="quarto-embed-nb-cell">
+<div id="cell-munic_queimados-tabela" class="cell" data-execution_count="42">
+<div id="munic_queimados-tabela" class="cell-output cell-output-display">
+<style type="text/css">
+#T_bc316 th {
+  background-color: #A00000;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+#T_bc316 td {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  padding: 8px;
+}
+#T_bc316 table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#T_bc316_row0_col0, #T_bc316_row0_col1, #T_bc316_row0_col2, #T_bc316_row0_col3, #T_bc316_row0_col4, #T_bc316_row2_col0, #T_bc316_row2_col1, #T_bc316_row2_col2, #T_bc316_row2_col3, #T_bc316_row2_col4, #T_bc316_row6_col0, #T_bc316_row6_col1, #T_bc316_row6_col2, #T_bc316_row6_col3, #T_bc316_row6_col4, #T_bc316_row8_col0, #T_bc316_row8_col1, #T_bc316_row8_col2, #T_bc316_row8_col3, #T_bc316_row8_col4 {
+  background-color: #FFF5F4;
+}
+#T_bc316_row1_col0, #T_bc316_row1_col1, #T_bc316_row1_col2, #T_bc316_row1_col3, #T_bc316_row1_col4, #T_bc316_row3_col0, #T_bc316_row3_col1, #T_bc316_row3_col2, #T_bc316_row3_col3, #T_bc316_row3_col4, #T_bc316_row5_col0, #T_bc316_row5_col1, #T_bc316_row5_col2, #T_bc316_row5_col3, #T_bc316_row5_col4, #T_bc316_row7_col0, #T_bc316_row7_col1, #T_bc316_row7_col2, #T_bc316_row7_col3, #T_bc316_row7_col4 {
+  background-color: #FED9D5;
+}
+#T_bc316_row4_col0, #T_bc316_row4_col1, #T_bc316_row4_col2, #T_bc316_row4_col3, #T_bc316_row4_col4 {
+  background-color: #FFF5F4;
+  border-bottom: 3px solid #A00000;
+}
+#T_bc316_row9_col0, #T_bc316_row9_col1, #T_bc316_row9_col2, #T_bc316_row9_col3, #T_bc316_row9_col4 {
+  background-color: #FED9D5;
+  border-bottom: 3px solid #A00000;
+}
+</style>
+
+<table id="T_bc316" class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th id="T_bc316_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">PERÍODO</th>
+<th id="T_bc316_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">POSIÇÃO</th>
+<th id="T_bc316_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">MUNICÍPIO</th>
+<th id="T_bc316_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">UF</th>
+<th id="T_bc316_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">TOTAL QUEIMADO (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_bc316_row0_col0" class="data row0 col0">Agosto 2026</td>
+<td id="T_bc316_row0_col1" class="data row0 col1">1°</td>
+<td id="T_bc316_row0_col2" class="data row0 col2">Nova Santa Helena</td>
+<td id="T_bc316_row0_col3" class="data row0 col3">MT</td>
+<td id="T_bc316_row0_col4" class="data row0 col4">4,64</td>
+</tr>
+<tr class="even">
+<td id="T_bc316_row1_col0" class="data row1 col0">Agosto 2026</td>
+<td id="T_bc316_row1_col1" class="data row1 col1">2°</td>
+<td id="T_bc316_row1_col2" class="data row1 col2">Lagoa da Confusão</td>
+<td id="T_bc316_row1_col3" class="data row1 col3">TO</td>
+<td id="T_bc316_row1_col4" class="data row1 col4">2,33</td>
+</tr>
+<tr class="odd">
+<td id="T_bc316_row2_col0" class="data row2 col0">Agosto 2026</td>
+<td id="T_bc316_row2_col1" class="data row2 col1">3°</td>
+<td id="T_bc316_row2_col2" class="data row2 col2">Fernando Falcão</td>
+<td id="T_bc316_row2_col3" class="data row2 col3">MA</td>
+<td id="T_bc316_row2_col4" class="data row2 col4">2,09</td>
+</tr>
+<tr class="even">
+<td id="T_bc316_row3_col0" class="data row3 col0">Agosto 2026</td>
+<td id="T_bc316_row3_col1" class="data row3 col1">4°</td>
+<td id="T_bc316_row3_col2" class="data row3 col2">Formoso do Araguaia</td>
+<td id="T_bc316_row3_col3" class="data row3 col3">TO</td>
+<td id="T_bc316_row3_col4" class="data row3 col4">1,54</td>
+</tr>
+<tr class="odd">
+<td id="T_bc316_row4_col0" class="data row4 col0">Agosto 2026</td>
+<td id="T_bc316_row4_col1" class="data row4 col1">5°</td>
+<td id="T_bc316_row4_col2" class="data row4 col2">Nova Nazaré</td>
+<td id="T_bc316_row4_col3" class="data row4 col3">MT</td>
+<td id="T_bc316_row4_col4" class="data row4 col4">1,35</td>
+</tr>
+<tr class="even">
+<td id="T_bc316_row5_col0" class="data row5 col0">Julho 2026</td>
+<td id="T_bc316_row5_col1" class="data row5 col1">1°</td>
+<td id="T_bc316_row5_col2" class="data row5 col2">Nova Santa Helena</td>
+<td id="T_bc316_row5_col3" class="data row5 col3">MT</td>
+<td id="T_bc316_row5_col4" class="data row5 col4">4,64</td>
+</tr>
+<tr class="odd">
+<td id="T_bc316_row6_col0" class="data row6 col0">Julho 2026</td>
+<td id="T_bc316_row6_col1" class="data row6 col1">2°</td>
+<td id="T_bc316_row6_col2" class="data row6 col2">Lagoa da Confusão</td>
+<td id="T_bc316_row6_col3" class="data row6 col3">TO</td>
+<td id="T_bc316_row6_col4" class="data row6 col4">2,33</td>
+</tr>
+<tr class="even">
+<td id="T_bc316_row7_col0" class="data row7 col0">Julho 2026</td>
+<td id="T_bc316_row7_col1" class="data row7 col1">3°</td>
+<td id="T_bc316_row7_col2" class="data row7 col2">Fernando Falcão</td>
+<td id="T_bc316_row7_col3" class="data row7 col3">MA</td>
+<td id="T_bc316_row7_col4" class="data row7 col4">2,09</td>
+</tr>
+<tr class="odd">
+<td id="T_bc316_row8_col0" class="data row8 col0">Julho 2026</td>
+<td id="T_bc316_row8_col1" class="data row8 col1">4°</td>
+<td id="T_bc316_row8_col2" class="data row8 col2">Formoso do Araguaia</td>
+<td id="T_bc316_row8_col3" class="data row8 col3">TO</td>
+<td id="T_bc316_row8_col4" class="data row8 col4">1,54</td>
+</tr>
+<tr class="even">
+<td id="T_bc316_row9_col0" class="data row9 col0">Julho 2026</td>
+<td id="T_bc316_row9_col1" class="data row9 col1">5°</td>
+<td id="T_bc316_row9_col2" class="data row9 col2">Nova Nazaré</td>
+<td id="T_bc316_row9_col3" class="data row9 col3">MT</td>
+<td id="T_bc316_row9_col4" class="data row9 col4">1,35</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+<hr style="border: none; border-top: 3px solid black; width: 100%;">
+</section>
+<section id="resultado-da-análise---mapa-de-integração-fogo-x-dias-s-chuva" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="resultado-da-análise---mapa-de-integração-fogo-x-dias-s-chuva"><span class="header-section-number">8</span> Resultado da Análise - Mapa de Integração Fogo x Dias s/ Chuva</h2>
+<p>Distribuição espacial do número de ocorrência de fogo ativo em novembro de 2025 sobreposto com o número de dias sem chuva julho e agosto de 2026</p>
+<div class="quarto-embed-nb-cell">
+<div id="mapa-integrado" class="cell" data-execution_count="69">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+📌 Processando período: Julho 2026</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Quarto-relatorio_queimadas_v1_files/figure-html/relatorio_queimadas_v2_localidade-mapa-integrado-output-2.png" id="mapa-integrado-1" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+📌 Processando período: Agosto 2026</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Quarto-relatorio_queimadas_v1_files/figure-html/relatorio_queimadas_v2_localidade-mapa-integrado-output-4.png" id="mapa-integrado-2" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="Quarto-relatorio_queimadas_v1_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

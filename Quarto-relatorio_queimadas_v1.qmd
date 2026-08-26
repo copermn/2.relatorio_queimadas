@@ -1,0 +1,115 @@
+---
+title: "Relatório Experimental Informativo de Queimadas na Amazônia Legal"
+author: "Fábio Passos"
+date: "2026-01-26"
+format:
+  html:
+    title-block-style: default
+    title-block-banner: "#A00000"  # Cor de fundo ou path da imagem
+    title-block-banner-color: "white" # Cor do texto no banner
+    css: styles.css # Adicionar logomarca do Censipam e do Painel do Fogo no cabeçalho
+
+    theme: cosmo
+    smooth-scroll: true
+    number-sections: true
+
+    toc: true
+    code-fold: true
+
+    #embed-resources: true
+    toc-depth: 3
+    toc-location: right
+
+  pdf:
+    documentclass: report
+    toc: true            # Adiciona sumário
+    number-sections: true # Numera as seções
+    colorlinks: true     # Links coloridos
+    geometry:            # Define margens
+      - top=30mm
+      - left=20mm
+execute:
+  echo: false
+--- 
+
+
+
+
+## 1. Introdução
+Este relatório apresenta dados extraídos de queimadas diretamente do banco de dados PostgreSQL usado no Boletim Informativo da Amazônia para as primeiras semanas dos meses de julho e agosto de 2026.
+
+## Resultado da Análise - Gráficos Separados
+Abaixo, os gráficos separado dos estados da Amazônia Legal com o número de ocorrência de fogo nos meses de julho e agosto de 2026.
+
+{{< embed relatorio_queimadas_v2_localidade.ipynb#grafico-UF_separados >}}
+
+
+{{< pagebreak >}}
+
+
+
+## Resultado da Análise - Gráfico Unificado
+Abaixo, o gráfico unificado dos estados da Amazônia Legal com o número de ocorrência de fogo nos meses de julho e agosto de 2026.
+
+{{< embed relatorio_queimadas_v2_localidade.ipynb#grafico-UF_unificado >}}
+
+
+{{< pagebreak >}}
+
+
+
+<hr style="border: none; border-top: 3px solid black; width: 100%;">
+
+## Resultado da Análise - Tabela Municipios 3+
+Abaixo, a tabela com os 3 municipios com os maiores números de ocorrência de fogo em julho e agosto de 2026 na Amazônia Legal
+
+{{< embed relatorio_queimadas_v2_localidade.ipynb#tabela-municipios >}}
+
+
+{{< pagebreak >}}
+
+
+
+<hr style="border: none; border-top: 3px solid black; width: 100%;">
+
+## Resultado da Análise - Tabela Municipios 3+
+Abaixo, a tabela com os 3 municipios com os maiores números de ocorrência de fogo em julho e agosto de 2026 na Amazônia Legal
+
+{{< embed relatorio_queimadas_v2_localidade.ipynb#Tabela_unificado_UF >}}
+
+
+{{< pagebreak >}}
+
+
+
+<hr style="border: none; border-top: 3px solid black; width: 100%;">
+
+## Resultado da Análise - Lista de Área Queimada dos Municipios (%)
+Listagem dos municipios com as maiores áreas de influência de eventos de fogo em relação ao tamanho do município em julho e agosto de 2026
+
+{{< embed relatorio_queimadas_v2_localidade.ipynb#munic_queimados-lista >}}
+
+
+{{< pagebreak >}}
+
+
+
+<hr style="border: none; border-top: 3px solid black; width: 100%;">
+
+## Resultado da Análise - Tabela de Área Queimada dos Municipios (%)
+Tabela dos municipios com as maiores áreas de influência de eventos de fogo em relação ao tamanho do município em julho e agosto de 2026
+
+{{< embed relatorio_queimadas_v2_localidade.ipynb#munic_queimados-tabela >}}
+
+
+{{< pagebreak >}}
+
+
+
+<hr style="border: none; border-top: 3px solid black; width: 100%;">
+
+## Resultado da Análise - Mapa de Integração Fogo x Dias s/ Chuva
+Distribuição espacial do número de ocorrência de fogo ativo em novembro de 2025 sobreposto com o número de dias sem chuva julho e agosto de 2026
+
+{{< embed relatorio_queimadas_v2_localidade.ipynb#mapa-integrado >}}
+

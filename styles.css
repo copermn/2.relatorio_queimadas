@@ -1,0 +1,43 @@
+/* Container do título */
+.quarto-title-block .quarto-title {
+    display: flex;
+    align-items: center;
+    /* sobe tudo */
+    /* center | flex-start | flex-end */
+    justify-content: space-between;
+}
+
+/* Logo da esquerda */
+.quarto-title::before {
+    content: "";
+    background-image: url("imagens/Logo3x Censipam - Negativo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 120px;
+    margin-top: 30px;
+    /* valor (-) sobe e (+) desce a logo esquerda */
+    margin-right: -30px;
+    /* valor (-) aproxima e (+) afasta do título */
+}
+
+/* Logo da direita */
+.quarto-title::after {
+    content: "";
+    background-image: url("imagens/painel-fogo_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 121px;
+    margin-top: 60px;
+    /* valor (-) sobe e (+) desce sobe a logo direita */
+    margin-left: 10px;
+    /* valor (-) aproxima e (+) afasta do título */
+}
+
+/* Centraliza o texto do título */
+.quarto-title h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
